@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<memcached>
+	<!-- name 属性是程序中使用Cache的唯一标识;socketpool 属性将会关联到后面的socketpool配置; -->
+	<client name="mclient_2" compressEnable="true" defaultEncoding="UTF-8"
+		socketpool="pool_1">
+		<!-- 可选，用来处理出错情况 -->
+	</client>
+	<!--
+		name 属性和client 配置中的socketpool 属性相关联。
+		maintSleep属性是后台线程管理SocketIO池的检查间隔时间，如果设置为0，则表明不需要后台线程维护SocketIO线程池，默认需要管理。
+		socketTO 属性是Socket操作超时配置，单位ms。 aliveCheck
+		属性表示在使用Socket以前是否先检查Socket状态。
+	-->
+	<socketpool name="pool_1" maintSleep="5000" socketTO="3000"
+		failover="true" aliveCheck="true" initConn="5" minConn="5" maxConn="250"
+		nagle="false">
+		<!-- 设置memcache服务端实例地址.多个地址用","隔开
+		<servers>192.168.66.135:11211,127.0.0.1:11211</servers>
+		<weights>5,5</weights><servers>127.0.0.1:11211</servers>
+		 -->
+		<servers>10.235.36.13:11212</servers>
+	</socketpool>
+</memcached>

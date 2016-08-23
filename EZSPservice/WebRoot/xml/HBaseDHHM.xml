@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <SenderID>BCF04011-9003-4EFE-9562-778879E4</SenderID>
+  <Method>
+    <Name>QueryHBaseDHCX</Name>
+    <Security Algorithm=""></Security>
+  </Method>
+  <Items>
+    <Item>
+      <Name>Condition</Name>
+      <Value Type="arrayof_string">
+        <Data>?</Data>
+      </Value>
+    </Item>
+    <Item>
+      <Name>RequiredItems</Name>
+      <Value Type="arrayof_string">
+        <Data>XM</Data>
+        <Data>WHERECLAUSE</Data>
+      </Value>
+    </Item>
+    <Item>
+      <Name>NextRowkey</Name>
+      <Value Type="arrayof_string ">
+        <Data>0</Data>
+      </Value>
+    </Item>
+    <Item>
+      <Name>PageSize</Name>
+      <Value Type="long">
+        <Data>20</Data>
+      </Value>
+    </Item>
+  </Items>
+</Request>

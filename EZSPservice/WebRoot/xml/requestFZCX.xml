@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <SenderID>002</SenderID>
+  <Method>
+    <Name>QueryData2</Name>
+    <Security Algorithm=""></Security>
+  </Method>
+  <Items>
+    <Item>
+      <Name>SelectList</Name>
+      <!--所选字段，在select与from之间的内容-->
+      <Value Type="object">
+        <Prefix>
+          <Hint>查询提示...，为以后预留</Hint>
+          <ResultFilter></ResultFilter>
+        </Prefix>
+        <Items>
+           <Item Alias="a" Attr="">XM</Item>
+           <Item Alias="b" Attr="">XM</Item>
+        </Items>
+      </Value>
+    </Item>
+    <Item>
+      <Name>DataReference</Name>
+      <!--from的内容-->
+      <Value Type="object">
+        <Items>
+          <Item Type="resource" Alias="a">S0201</Item>
+          <Item Type="resource" Alias="b">S0201</Item>
+          <Item Type="clause" Alias="c">select ... from ...</Item>
+        </Items>
+           <Relations>
+          <Relation>
+            <Alias1>a</Alias1>
+            <Alias2>b</Alias2>
+            <Type>left join</Type>
+            <Condition>
+              <Field1>RYID</Field1>
+              <Field2>RYID</Field2>
+              <!--op内容包括：eq, ne, gt, ge, lt, le, in, like-->
+              <op>eq</op>
+            </Condition>
+          </Relation>
+          </Relations>
+      </Value>
+    </Item>
+     <Item>
+      <Name>QueryCondition</Name>
+      <!--where的内容-->
+      <Value Type="object">
+        <Condition>
+          <Item Type="complex">
+            <Item Type="field" Alias="a">XM</Item>
+            <Item Type="const" Alias="b">'靳%'</Item>
+            <op>like</op>
+          </Item>
+           <Item Type="complex">
+            <Item Type="field" Alias="a">DQM</Item>
+            <Item Type="const" Alias="b">'130100'</Item>
+            <op>ne</op>
+          </Item>
+           <op>and</op>
+        </Condition>
+      </Value>
+    </Item>
+     
+    
+  </Items> 
+</Request>

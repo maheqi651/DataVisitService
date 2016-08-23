@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relation>
+        <tables name="常口">
+                <table chname="个人信息">G_CZRKXX3</table>
+        </tables>
+        <tables name="流口">
+                <table chname="户政流口-居住证">G_JJZ</table>
+				<table chname="户政流口-流动人员业务信息-历史">G_CZRKXX</table>
+				<table chname="个人信息">G_LDRYYW2</table>
+				<table chname="流动人员业务信息">G_CZRKXX1</table>		 
+        </tables>
+</relation>

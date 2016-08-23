@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels>
+	<!-- 
+		配置文件注意事项：
+		1、 table标签的extra属性是对特殊情况的标识，代码中进行特殊的处理，标识的值是唯一固定的，在程序中是硬编码识别的
+	 -->
+    <!--
+		存在的问题
+		1、@miss 在r_syxx中没有该字段
+		2、有两个证件号码 需要特殊处理
+		3、@data error sfzh字段表中都没有值
+		dbuser表示该表所属的用户，jdbcname是表示该表所属的JDBC连接（jdbc连接在 jdbcs.xml 中配置）
+			整体配置文件的id表示此表的主键，如果没有主键，则用身份证字段代替; 整体配置文件的hm，表示身份证号表示字段
+	-->
+	<category name="基本类">
+		<label name="被盗车" description="被盗车基本信息的描述">
+			
+			<table name='G_QGBDQ_QC' hm="HPHM" id="ID" dbuser="jc_bazy_g" cname="被盗车" jdbcname="jdbc">
+			</table>
+		</label>
+		<label name="套牌历史" description="套牌车辆基本信息的描述">
+			<table name='G_JTPCL' hm="HPHM" id="XYCXH" dbuser="jc_bazy_g" cname="套牌历史" jdbcname="jdbc">
+			</table> 
+		</label>
+		<label name="警务车" description="警务车辆基本信息的描述">
+			<table name='G_JWCL' hm="CARNUMBER" id="SN" dbuser="jc_bazy_g" cname="警务车" jdbcname="jdbc">
+			</table>
+		</label>
+		<label name="剧毒化学运输车" description="剧毒化学运输车基本信息的描述">
+			<table name='G_JDHXPGLYSCL_NEW' hm="HPHM" id="CLSBDH" dbuser="jc_bazy_g" cname="剧毒化学运输车" jdbcname="jdbc">
+			</table>
+		</label>
+	</category>
+</labels>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-body>
+    <action name="QueryMetadataStd" path="com.easymap.datacenter.servlet.QueryMetadataStd"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+     <action name="QueryMetadataInfo" path="com.easymap.datacenter.servlet.QueryMetadataInfo"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="CheckIsComplete" path="com.easymap.datacenter.servlet.CheckIsComplete"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+	 <action name="CheckResultByCondition" path="com.easymap.datacenter.servlet.CheckResultByCondition"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+	 <action name="ExportCheckResult" path="com.easymap.datacenter.servlet.ExportCheckResult"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+	 <action name="TableMapPPL" path="com.easymap.datacenter.servlet.TableMapPPL"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="CheckDataMeta" path="com.easymap.datacenter.servlet.CheckDataMeta"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="QueryTableCode" path="com.easymap.servletSRV.QueryTableCode"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="QueryBUSGPSHIS" path="com.easymap.hbase.servlet.QueryHBaseGPSBUSHIS"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+ 　　<action name="QueryTAXIGPSHIS" path="com.easymap.hbase.servlet.QueryHBaseGPSHIS"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="QueryHBaseDHCX" path="com.easymap.hbase.servlet.QueryHBaseDHCX"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="QueryHBase" path="com.easymap.hbase.servlet.QueryHBaseServlet"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+     <action name="G_Query_JDCBJ" path="com.easymap.servletSRV.GQueryJDCBJ"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="G_Query_JDCXX_Source" path="com.easymap.servletSRV.GQueryJDCXXSource"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action> 
+    <action name="G_Query_JDCXX" path="com.easymap.servletSRV.GQueryJDCXX"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>  
+    <action name="G_Query_RYBJ" path="com.easymap.servletSRV.GQueryRYBJ"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>  
+    <action name="G_Query_RYXX_Source" path="com.easymap.servletSRV.GQueryRYXXSource"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>    
+    <action name="G_Query_RYXX" path="com.easymap.servletSRV.GQueryRYXX"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>      
+	<action name="SearchService" path="com.easymap.servletSRV.SearchService"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="TestService" path="com.easymap.servletSRV.testService"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	
+	<action name="EnumDictionary" path="com.easymap.servletSRV.EnumDictionary"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	
+	<action name="QueryDictionaryTree" path="com.easymap.servletSRV.QueryDictionaryTree"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	
+	
+	<action name="EnumDictionaryCode" path="com.easymap.servletSRV.EnumDictionaryCode"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	
+	
+	<action name="QueryDictionaryCode" path="com.easymap.servletSRV.QueryDictionaryCode"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	
+	
+	<action name="QueryDictionary" path="com.easymap.servletSRV.QueryDictionary"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	
+	<action name="queryDataResourceServlet" path="com.easymap.servletSRV.queryDataResourceServlet"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="QueryDataServlet" path="com.easymap.servletSRV.QueryDataServlet"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="QueryData2Servlet" path="com.easymap.servletSRV.QueryData2Servlet"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="HitDataServlet" path="com.easymap.servletSRV.HitDataServlet"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="EnumService" path="com.easymap.servletSRV.EnumService"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="GetServiceInfo" path="com.easymap.servletSRV.GetServiceInfo"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+	<action name="GetDataResourceInfo" path="com.easymap.servletSRV.GetDataResourceInfo"
+		type="" parameter="methode" scope="request" validate="true" input="">
+		<forward name="success" path="" />
+		<forward name="failure" path="" />
+	</action>
+</xml-body>

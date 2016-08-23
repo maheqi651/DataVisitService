@@ -1,0 +1,23 @@
+<Request>
+	<SenderID>0004</SenderID>
+	<Method>
+		<Name>G_Query_RYXX</Name>
+		<Security Algorithm="" />
+	</Method>
+	<Items> 
+		
+		<Item>
+      <Name>FieldName</Name>
+      <Value Type="string">
+        <Data>LXDH</Data>
+      </Value>
+    </Item>
+    <Item>
+      <Name>ID</Name>
+      <Value Type="string">
+        <Data>7771236EC4DD0B49A0072D65E6ED4322</Data>
+      </Value>
+    </Item>
+
+	</Items>
+</Request>

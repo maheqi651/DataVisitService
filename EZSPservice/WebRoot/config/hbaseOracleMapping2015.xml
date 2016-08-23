@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<HBaseTables>
+		<HBaseTable createTime="20151027173112" entryNumber="20367"
+			name="test" timeStampQualifier="null" isTimeStampIncremental="random"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="ROWKEY" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ROWKEY" />
+			</RowkeyGroup>
+		</HBaseTable>
+		<HBaseTable createTime="20151027173403" entryNumber="146430"
+			name="test1" timeStampQualifier="null" isTimeStampIncremental="random"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="ROWKEY" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ROWKEY" />
+			</RowkeyGroup>
+		</HBaseTable>
+		<HBaseTable createTime="20151027200137" entryNumber="0"
+			name="test2" timeStampQualifier="null" isTimeStampIncremental="random"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="ZJHM" nullable="Y" type="String" />
+				<Qualifier name="XM" nullable="Y" type="String" />
+				<Qualifier name="ROWKEY" nullable="Y" type="String" />
+				<Qualifier name="TABLE_ALLASNAME" nullable="Y" type="String" />
+				<Qualifier name="TABLE_NAME" nullable="Y" type="String" />
+				<Qualifier name="WHERECLAUSE" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ROWKEY" />
+			</RowkeyGroup>
+		</HBaseTable>
+		<HBaseTable createTime="20151027200412" entryNumber="118"
+			name="test3" timeStampQualifier="null" isTimeStampIncremental="random"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="ZJHM" nullable="Y" type="String" />
+				<Qualifier name="XM" nullable="Y" type="String" />
+				<Qualifier name="ROWKEY" nullable="Y" type="String" />
+				<Qualifier name="TABLE_ALLASNAME" nullable="Y" type="String" />
+				<Qualifier name="TABLE_NAME" nullable="Y" type="String" />
+				<Qualifier name="WHERECLAUSE" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ROWKEY" />
+			</RowkeyGroup>
+		</HBaseTable>
+		<HBaseTable createTime="20151027200834" entryNumber="0"
+			name="test4" timeStampQualifier="null" isTimeStampIncremental="random"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="ROWKEY" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ROWKEY" />
+			</RowkeyGroup>
+		</HBaseTable>
+		<HBaseTable createTime="20151029105125" entryNumber="0"
+			name="test5" timeStampQualifier="null" isTimeStampIncremental="random"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="ZJHM" nullable="Y" type="String" />
+				<Qualifier name="XM" nullable="Y" type="String" />
+				<Qualifier name="ROWKEY" nullable="Y" type="String" />
+				<Qualifier name="TABLE_ALLASNAME" nullable="Y" type="String" />
+				<Qualifier name="TABLE_NAME" nullable="Y" type="String" />
+				<Qualifier name="WHERECLAUSE" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ROWKEY" />
+			</RowkeyGroup>
+		</HBaseTable>
+		<HBaseTable createTime="20151102204152" entryNumber="0"
+			name="KKSJ" timeStampQualifier="ZYKRKSJ" isTimeStampIncremental="column"
+			timeStampColumnFamily="DEFAULT" HBaseInstance="HBase01">
+			<ColumnFamily name="DEFAULT">
+				<Qualifier name="VID" nullable="Y" type="String" />
+				<Qualifier name="PASSDATE" nullable="Y" type="String" />
+				<Qualifier name="PASSTIME" nullable="Y" type="String" />
+				<Qualifier name="PLATE" nullable="Y" type="String" />
+				<Qualifier name="PORTID" nullable="Y" type="String" />
+				<Qualifier name="PATHID" nullable="Y" type="String" />
+				<Qualifier name="XQ" nullable="Y" type="String" />
+				<Qualifier name="INDATE" nullable="Y" type="String" />
+				<Qualifier name="INTIME" nullable="Y" type="String" />
+				<Qualifier name="BZ" nullable="Y" type="String" />
+				<Qualifier name="BD" nullable="Y" type="String" />
+				<Qualifier name="XY" nullable="Y" type="String" />
+				<Qualifier name="HP" nullable="Y" type="String" />
+				<Qualifier name="PLATECOLOR" nullable="Y" type="String" />
+				<Qualifier name="ZYKRKSJ" nullable="Y" type="Date" />
+				<Qualifier name="SDXS" nullable="Y" type="String" />
+				<Qualifier name="ZPPATH" nullable="Y" type="String" />
+				<Qualifier name="PORTNAME" nullable="Y" type="String" />
+				<Qualifier name="ID" nullable="Y" type="String" />
+			</ColumnFamily>
+			<RowkeyGroup>
+				<Rowkey ColumnFamily="DEFAULT" Qualifier="ID" />
+			</RowkeyGroup>
+		</HBaseTable>
+	</HBaseTables>
+	<OracleTables />
+	<Mappings>
+		<tableMapping createTime="20151027173112" dataType="kvData"
+			HBaseTableName="test" timeColumn="null" createType="stream"
+			HBaseInstance="HBase01" streamName="test">
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ROWKEY" StreamColumn="ROWKEY" />
+		</tableMapping>
+		<tableMapping createTime="20151027173403" dataType="kvData"
+			HBaseTableName="test1" timeColumn="null" createType="stream"
+			HBaseInstance="HBase01" streamName="test1">
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ROWKEY" StreamColumn="ROWKEY" />
+		</tableMapping>
+		<tableMapping createTime="20151027200137" dataType="kvData"
+			HBaseTableName="test2" timeColumn="null" createType="stream"
+			HBaseInstance="HBase01" streamName="test2">
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ZJHM" StreamColumn="ZJHM" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="XM" StreamColumn="XM" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ROWKEY" StreamColumn="ROWKEY" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="TABLE_ALLASNAME" StreamColumn="TABLE_ALLASNAME" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="TABLE_NAME" StreamColumn="TABLE_NAME" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="WHERECLAUSE" StreamColumn="WHERECLAUSE" />
+		</tableMapping>
+		<tableMapping createTime="20151027200412" dataType="kvData"
+			HBaseTableName="test3" timeColumn="null" createType="stream"
+			HBaseInstance="HBase01" streamName="test3">
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ZJHM" StreamColumn="ZJHM" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="XM" StreamColumn="XM" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ROWKEY" StreamColumn="ROWKEY" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="TABLE_ALLASNAME" StreamColumn="TABLE_ALLASNAME" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="TABLE_NAME" StreamColumn="TABLE_NAME" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="WHERECLAUSE" StreamColumn="WHERECLAUSE" />
+		</tableMapping>
+		 
+		<tableMapping createTime="20151027200834" dataType="kvData"
+			HBaseTableName="test4" timeColumn="null" createType="stream"
+			HBaseInstance="HBase01" streamName="test4">
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ROWKEY" StreamColumn="ROWKEY" />
+		</tableMapping>
+		<tableMapping createTime="20151029105125" dataType="kvData"
+			HBaseTableName="test5" timeColumn="null" createType="stream"
+			HBaseInstance="HBase01" streamName="test5">
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ZJHM" StreamColumn="ZJHM" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="XM" StreamColumn="XM" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="ROWKEY" StreamColumn="ROWKEY" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="TABLE_ALLASNAME" StreamColumn="TABLE_ALLASNAME" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="TABLE_NAME" StreamColumn="TABLE_NAME" />
+			<columnMapping ColumnFamily="DEFAULT" StreamType="String"
+				Qualifier="WHERECLAUSE" StreamColumn="WHERECLAUSE" />
+		</tableMapping>
+		
+	</Mappings>
+</root>

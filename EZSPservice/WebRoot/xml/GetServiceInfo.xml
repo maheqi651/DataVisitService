@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <SenderID>0009</SenderID>
+  <Method>
+    <Name>GetServiceInfo</Name>
+    <Security Algorithm=""></Security>
+    <Items>
+      <Item>
+        <Name>ServiceID</Name>
+        <Value Type="string">
+          <!--服务标识-->
+          <Data>SRB001</Data>
+        </Value>
+      </Item>
+    </Items>
+  </Method>
+</Request>

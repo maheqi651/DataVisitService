@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">  
+	
+	<!-- <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance  http://www.springmodules.org/schema/cache/springmodules-cache.xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd"    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee    
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd        
+     ">   -->
+    <!--  <web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0"> -->
+	 <context-param>
+		<param-name>configPath</param-name>
+		<param-value>/config</param-value>
+	</context-param>
+	<!-- <listener>
+	   <listener-class>com.easymap.base.timeout.AppContextListener</listener-class>
+	</listener> -->
+	
+	<listener>
+		<listener-class>com.easymap.hbase.tool.initsystem.InitSystem</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>com.easymap.memcached.guard.SafeGuard</listener-class>
+	</listener>
+	<filter>
+		<filter-name>VerifyAccessFilter</filter-name>
+		<filter-class>com.easymap.filter.VerifyAccessFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>VerifyAccessFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+        
+	<filter>
+		<filter-name>ControlFilter</filter-name>
+		<filter-class>com.easymap.filter.ControlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ControlFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	<servlet>
+	<servlet-name>HessianHelloWord</servlet-name>
+	<servlet-class>com.easymap.memcached.hessian.servlet.HessianHelloWordImpl</servlet-class>
+   </servlet>
+	<servlet-mapping>
+		<servlet-name>HessianHelloWord</servlet-name>
+		<url-pattern>/HessianHelloWord</url-pattern>
+	</servlet-mapping>
+  <!-- <servlet>
+    <servlet-name>OneServlet</servlet-name>
+    <servlet-class>com.easymap.base.scontrol.ControlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OneServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+   -->
+   
+</web-app>
+

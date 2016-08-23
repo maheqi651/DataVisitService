@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Response>
+	<SenderID>xxx</SenderID>
+	<ServiceID>SRB001</ServiceID>
+	<Method>
+		<Name>QueryData</Name>
+		<Security Algorithm=""></Security>
+		<Items>
+			<Item>
+				<Name>ResultInfo</Name>
+				<Value Type="Fields">
+					<Data type="string">DMDT</Data>
+					<Data type="string">DMDTFL</Data>
+					<Data type="double">XCOR</Data>
+					<Data type="double">YCOR</Data>
+					<Data type="double">ID</Data>
+				</Value>
+			</Item>
+			<Item>
+				<Name>Result</Name>
+				<Value Type="Records">
+					<Records>
+						<Record>
+							<Data>南宁市江南区友谊路96号新塘坡1栋</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36530376.9705</Data>
+							<Data>2519897.674</Data>
+							<Data>1</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号综合楼</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529426.9689</Data>
+							<Data>2519107.99</Data>
+							<Data>2</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号杂物房</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529353.1764</Data>
+							<Data>2519084.2593</Data>
+							<Data>3</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号厂房1</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529430.3911</Data>
+							<Data>2519196.811</Data>
+							<Data>4</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号仓库</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529380.5357</Data>
+							<Data>2519115.5412</Data>
+							<Data>5</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号厂房3</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529351.9162</Data>
+							<Data>2519151.8089</Data>
+							<Data>6</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路40号厂房5</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529351.4324</Data>
+							<Data>2519189.5708</Data>
+							<Data>7</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号配电房</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36528990.2626</Data>
+							<Data>2521925.5145</Data>
+							<Data>8</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号厂房9</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529239.7019</Data>
+							<Data>2519295.113</Data>
+							<Data>9</Data>
+						</Record>
+						<Record>
+							<Data>南宁市江南区友谊路46号厂房10</Data>
+							<Data>标准地址数据 数据来源：南宁市公安局</Data>
+							<Data>36529253.717</Data>
+							<Data>2519269.8909</Data>
+							<Data>10</Data>
+						</Record>
+					</Records>
+				</Value>
+			</Item>
+			<Item>
+				<Name>Total</Name>
+				<Value>1068849</Value>
+			</Item>
+		</Items>
+	</Method>
+</Response>

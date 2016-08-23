@@ -1,0 +1,24 @@
+<HBaseInstances>
+	 
+    <HBase name="HBase09" >
+		<QuorumIP>datanode11.big.com,namenode1.big.com,namenode2.big.com</QuorumIP>
+		<QuorumPort>2181</QuorumPort>
+		<ServerIP>namenode1.big.com</ServerIP>
+		<username>root</username>
+		<password>111111</password>
+		<defaultFSName>hdfs://namenode1.big.com:9000/hbase</defaultFSName>
+		<HadoopPath>/root</HadoopPath>
+		<MRPath>/root</MRPath> 
+	</HBase>
+	 
+	<HBase name="HBase01" >
+		<QuorumIP>datanode11.big.com,namenode1.big.com,namenode2.big.com</QuorumIP>
+		<QuorumPort>2181</QuorumPort>
+		<ServerIP>namenode1.big.com</ServerIP>
+		<username>root</username>
+		<password>111111</password>
+		<defaultFSName>hdfs://namenode1.big.com:9000/hbase</defaultFSName>
+		<HadoopPath>/root</HadoopPath>
+		<MRPath>/root</MRPath> 
+	</HBase>
+</HBaseInstances>

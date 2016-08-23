@@ -1,0 +1,39 @@
+<Request>
+	<SenderID>0004</SenderID>
+	<Method>
+		<Name>G_Query_RYXX</Name>
+		<Security Algorithm="" />
+	</Method>
+	<Items> 
+		
+		<Item>
+			<Name>RequiredItems</Name>
+			<Value Type="arrayof_string">
+				<Data>XM</Data>
+                              <Data>ID</Data>
+                               <Data>SG</Data>
+                              <Data>ZJHM</Data>
+                              <Data>POID</Data>
+                                <Data>LXDH</Data>
+			</Value>
+		</Item>
+		<Item>
+			<Name>Condition</Name>
+			<Value Type="string">
+				<Data>1=1</Data>
+			</Value>
+		</Item>
+		<Item>
+			<Name>StartPosition</Name>
+			<Value Type="long">
+				<Data>0</Data>
+			</Value>
+		</Item>
+		<Item>
+			<Name>MaxResultCount</Name>
+			<Value Type="long">
+				<Data>100</Data>
+			</Value>
+		</Item>
+	</Items>
+</Request>

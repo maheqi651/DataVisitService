@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <SenderID>001</SenderID>
+  <Method>
+    <Name>SearchService</Name>
+    <Security Algorithm=""></Security>
+    <Items>
+      <Item>
+        <Name>ServiceType</Name>
+        <Value Type="string">
+          <!--查询哪类服务，可为空，或者Res/RBSP/NoSQL/Analyse/Monitor-->
+          <Data>Res</Data>
+        </Value>
+      </Item>
+      <Item>
+        <Name>ServiceName</Name>
+        <Value Type="string">
+          <!--服务名称，可为空，模糊搜索-->
+          <Data>数据资源查询</Data>
+        </Value>
+      </Item>
+      <Item>
+        <Name>ServiceID</Name>
+        <Value Type="string">
+          <!--服务标识，可为空-->
+          <Data></Data>
+        </Value>
+      </Item>
+    </Items>
+  </Method>
+</Request>

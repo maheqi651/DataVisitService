@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <SenderID>001</SenderID>
+  <Method>
+    <Name>HitData</Name>
+    <Security Algorithm=""></Security>
+  </Method>
+  <Items>
+    <Item>
+      <Name>ResourceList</Name>
+      <!--碰撞的数据源，只支持两个-->
+      <Value Type="object">
+        <Items>
+          <Item Type="resource">
+            <Code>S050102</Code>
+            <ReturnFields>
+              <Field>mc</Field>
+              <Field>address</Field>
+            </ReturnFields>
+          </Item>
+          <Item Type="resource">
+            <Code>S050101</Code>
+            <ReturnFields>
+              <Field>mc</Field>
+              <Field>address</Field>
+            </ReturnFields>
+          </Item>
+        </Items>
+      </Value>
+    </Item>
+    <Item>
+      <Name>Conditions</Name>
+      <!--碰撞条件-->
+      <Value Type="object">
+        <Condition>
+          <Item Type="complex">
+            <Item Type="field" Alias="a">mc</Item>
+            <Item Type="const" Alias="b">'%张%'</Item>
+            <op>like</op>
+          </Item>
+          <Item Type="complex">
+            <Item Type="field" Alias="a">age</Item>
+            <Item Type="const" Alias="b">30</Item>
+            <op>gt</op>
+          </Item>
+          <op>and</op>
+        </Condition>
+        <Condition>
+          <Item Type="complex">
+            <Item Type="field" Alias="a">mc</Item>
+            <Item Type="const" Alias="b">'%李%'</Item>
+            <op>like</op>
+          </Item>
+          <Item Type="complex">
+            <Item Type="field" Alias="a">age</Item>
+            <Item Type="const" Alias="b">30</Item>
+            <op>gt</op>
+          </Item>
+          <op>and</op>
+        </Condition>
+      </Value>
+    </Item>
+    <Item>
+      <Name>HitMethod</Name>
+      <!-- 碰撞方式，交集碰撞还是补集碰撞-->
+      <Value Type="string">
+          <Data>Intersect/Minus</Data>
+      </Value>
+    </Item>
+    <Item>
+      <Name>Order</Name>
+      <!--order by的内容-->
+      <Value Type="object">
+        <Items>
+          <Item Type="field">mc</Item>
+          <Item Type="field">address</Item>
+        </Items>
+      </Value>
+    </Item>
+  </Items>
+</Request>

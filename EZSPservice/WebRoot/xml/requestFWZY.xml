@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <SenderID>001</SenderID>
+  <Method>
+    <Name>EnumService</Name>
+    <Security Algorithm=""></Security>
+    <Items>
+      <Item>
+        <Name>ServiceType</Name>
+        <Value Type="string">
+          <!--查询哪类服务，可为空，或者Res/RBSP/NoSQL/Analyse/Monitor-->
+          <Data></Data>
+        </Value>
+      </Item>
+    </Items>
+  </Method>
+</Request>

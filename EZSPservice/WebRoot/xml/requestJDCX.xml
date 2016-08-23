@@ -1,0 +1,40 @@
+<Request>
+	<SenderID>0004</SenderID>
+	<Method>
+		<Name>QueryData</Name>
+		<Security Algorithm="" />
+	</Method>
+	<Items> 
+		<Item>
+			<Name>DataObjectCode</Name>
+			<Value Type="string">
+				<Data>S010201</Data>
+			</Value>
+		</Item>
+		 
+		<Item>
+			<Name>RequiredItems</Name>
+			<Value Type="arrayof_string">
+				<Data>XM</Data>
+			</Value>
+		</Item>
+		<Item>
+			<Name>Condition</Name>
+			<Value Type="string">
+				<Data>  XM like '%王%'</Data>
+			</Value>
+		</Item>
+		<Item>
+			<Name>StartPosition</Name>
+			<Value Type="long">
+				<Data>0</Data>
+			</Value>
+		</Item>
+		<Item>
+			<Name>MaxResultCount</Name>
+			<Value Type="long">
+				<Data>1000</Data>
+			</Value>
+		</Item>
+	</Items>
+</Request>

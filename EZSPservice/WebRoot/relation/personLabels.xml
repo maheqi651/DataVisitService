@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels>
+	<!-- 
+		配置文件注意事项：
+		1、 table标签的extra属性是对特殊情况的标识，代码中进行特殊的处理，标识的值是唯一固定的，在程序中是硬编码识别的
+	 -->
+    <!--
+		存在的问题
+		1、@miss 在r_syxx中没有该字段
+		2、有两个证件号码 需要特殊处理
+		3、@data error sfzh字段表中都没有值
+	
+	
+	-->
+	<category name="基本类">
+		<label name="常口" description="广州常住人口登记信息，主要记录人员的基本信息、父母配偶信息等。主要包含的表有户籍常住人口">
+			<!-- dbuser表示该表所属的用户，jdbcname是表示该表所属的JDBC连接（jdbc连接在 jdbcs.xml 中配置） -->
+			<!--整体配置文件的id表示此表的主键，如果没有主键，则用身份证字段代替; 整体配置文件的hm，表示身份证号表示字段 -->
+			<table name='G_CZRKXX' hm="GMSFHM" id="id" dbuser="jc_bazy_g" cname="户籍常住人口" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="流口" description="来广流动人口登记信息，主要记录人员的基本信息，居住信息等，主要包含的表有流动人员业务信息、暂住-居住证受理信息">
+			<table name='G_LDRYYWXX' hm="ZJHM" id="PK" dbuser="jc_bazy_g" cname="流动人员业务信息" jdbcname="db01">
+			</table> 
+			<table name='G_JJZSLB' hm="ZJHM" id="PK" dbuser="jc_bazy_g" cname="暂住-居住证受理信息" jdbcname="db01">
+			</table>
+			<!-- <table name='G_JJZ' hm="id" id="p_key" dbuser="jc_bazy_g" cname="户政流口-居住证" jdbcname="db01">
+			</table> --><!-- @miss 在r_syxx中没有该字段 -->
+			<!-- <table name='G_LDRYYW' hm="id" id="p_key" dbuser="jc_bazy_g" cname="户政流口-流动人员业务信息-历史" jdbcname="db01">
+			</table> --><!-- @miss 在r_syxx中没有该字段 -->
+		</label>
+		
+		<label name="涉港澳台" description="来广涉港澳台人口登记信息，主要包含港澳台个体工商户开业注销信息，进出港和新港澳台旅客信息等">
+			<table name='Z_GONGSHANG_GOTGTGSHKY_BGDJ' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-港澳台个体工商户开业（变更）登记信息" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_GOTGTSHZX' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-港澳台个体工商户注销信息" jdbcname="db02">
+			</table>
+			<table name='S_DZCGLK_ST' hm="FOID" id="ID" dbuser="jc_bazy_g" cname="订座出港旅客信息(省厅)" jdbcname="db03">
+			</table>
+			<table name='S_CGLKXX_ST' hm="FOID" id="ID" dbuser="jc_bazy_g" cname="出港旅客信息(省厅)" jdbcname="db03">
+			</table>
+			<table name='S_DZJGLK_ST' hm="FOID" id="ID" dbuser="jc_bazy_g" cname="订座进港旅客信息(省厅)" jdbcname="db03">
+			</table>
+			<table name='S_JGLK_ST' hm="FOID" id="ID" dbuser="jc_bazy_g" cname="进港旅客信息(省厅)" jdbcname="db03">
+			</table>
+			<table name='S_XGOTLK' hm="IDCODE" id="CCODE" dbuser="jc_bazy_g" cname="新港澳台旅客" jdbcname="db03">
+			</table>
+		</label>
+	
+		<label name="外籍" description="来广外籍人口登记信息，主要包含外国人租赁和购买房屋信息、签证签发信息、外国专家证审批、外籍教师违法违纪信息等">
+			<table name='Z_WGRZHZZCZW' hm="CHUZRZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="流动-外国人在穗租住出租屋信息" jdbcname="db02">
+			</table>
+			<table name='G_WGRQZ_QFXX' hm="ZJHM" id="YWBH" dbuser="jc_bazy_g" cname="外国人签证签发信息表" jdbcname="db01">
+			</table>
+			<table name='G_WGRZJ_QFXX' hm="ZJHM" id="YWBH" dbuser="jc_bazy_g" cname="外国人证件签发信息表" jdbcname="db01">
+			</table>
+			<table name='Z_RS_WGZJLHGZ_XKXX' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-外国专家来华工作许可信息" jdbcname="db02">
+			</table>
+			<table name='Z_RS_WGZJZ_SPXX' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-外国专家证审批信息" jdbcname="db02">
+			</table>
+			<table name='Z_RS_WFWJWFHTWJJS' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-违法、违纪、违反合同外籍教师信息" jdbcname="db02">
+			</table>
+			<table name='Z_GT_WGRGMFW' hm="ZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="国土-外国人购买房屋信息" jdbcname="db02">
+			</table>
+			<table name='Z_GT_WGRZLFW' hm="ZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="国土-外国人租赁房屋信息" jdbcname="db02">
+			</table>
+		</label>
+		
+		<label name="涉外" description="涉及外籍人士登记信息，主要记录涉外结婚离婚信息、涉外法人的地税国税登记（变更）、涉外案件等信息">
+			<table name='Z_MZ_SWJHDJ' hm="NSFZJHM,NVSFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="民政-涉外结婚登记信息（男）" jdbcname="db02"
+				extra="SPECIAL_LABEL_1">
+			</table><!-- 根据 extra 属性的指定值，代码中进行了特殊的处理  -->
+			<table name='Z_MZ_SWJHDJ' hm="NSFZJHM,NVSFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="民政-涉外结婚登记信息（女）" jdbcname="db02"
+				extra="SPECIAL_LABEL_1">
+			</table><!-- 根据 extra 属性的指定值，代码中进行了特殊的处理  -->
+			<table name='Z_MZ_SWLHDJ' hm="NSFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="民政-涉外离婚登记信息（男）" jdbcname="db02">
+			</table>
+			<table name='Z_MZ_SWLHDJ' hm="NVSFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="民政-涉外离婚登记信息（女）" jdbcname="db02">
+			</table>
+			<table name='Z_DS_SWFRDWDSDJ_BG' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="地税-涉外法人单位地税登记（变更）信息" jdbcname="db02">
+			</table>
+			<table name='Z_GS_SWFRDW_GSDJ_BG' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="国税-涉外法人单位国税登记（变更）信息" jdbcname="db02">
+			</table>
+			<table name='Z_FY_SWAJ' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="法院-涉外案件信息" jdbcname="db02">
+			</table>
+			<table name='Z_LS_SWGR_JBXX' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="劳社-涉外个人基本信息" jdbcname="db02">
+			</table>
+	    </label>
+		
+		<label name="死亡" description="人员死亡登记信息，主要记录人员的基本信息、死亡时间地点和原因等信息">
+			<table name='G_SWDJXX' hm="GMSFHM" id="ID" dbuser="jc_bazy_g" cname="死亡登记信息" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="失踪" description="人员失踪登记信息，主要记录人员的基本信息、体貌特征、走失时间地点和原因、联系人等信息">
+			<table name='G_SZRY' hm="ZJHM" id="SYSTEMID" dbuser="jc_bazy_g" cname="失踪人员" jdbcname="db01">
+			</table>
+		</label>
+	
+		<label name="失业登记" description="人员失业登记信息，主要记录人员的基本信息、失业时间段、原工作单位、失业原因等信息">
+			<table name='Z_LS_SYDJ' hm="SFZHM" id="S_GUID" dbuser="jc_bazy_g" cname="失业登记信息" jdbcname="db02">
+			</table>
+		</label>
+		
+		<label name="低保" description="领取低保人员的登记信息，主要记录人员的基本信息、户口户籍信息、家庭人数和收入情况等信息">
+			<table name='Z_MZ_DBHDJ' hm="HZGMSFHM" id="S_GUID" dbuser="jc_bazy_g" cname="民政-低保户登记信息" jdbcname="db02">
+			</table>
+		</label>
+		
+	</category>
+	
+	<category name="职业类">
+	     <label name="驾驶人" description="具备驾驶机动车辆人员的信息，主要包含的来源表有机动车驾驶人、证信息，出租车和公交司机基本信息等">
+			<table name='G_JDCJSRZXX' hm="SFZMHM" id="DABH" dbuser="jc_bazy_g" cname="机动车驾驶人、证信息" jdbcname="db01">
+			</table>
+			<table name='S_CZCSJ_JBXX' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="出租车司机基本信息" jdbcname="db03">
+			</table>
+			<table name='S_GJCSJ_JBXX' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="公交车司机基本信息" jdbcname="db03">
+			</table>
+		</label>
+		
+		<label name="个体经营" description="工商税务部门登记的个体工商户信息，主要包含个体工商户的设立（变更）、注销、吊销、税务登记信息等">
+			<table name='Z_GONGSHANG_GTSHSLDJ_BGDJ_V3' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-个体工商户设立登记(变更登记)信息(V3)" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_GTGSHYZ_V3' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-个体工商户验照信息(V3)" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_GTSHZXDJ_V3' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-个体工商户注销登记信息(V3)" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_GTSHDXYYZZ_V3' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-个体工商户吊销营业执照信息(V3)" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_KYDJ_BGDJ_V3' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-开业登记(变更登记)信息(V3)" jdbcname="db02">
+			</table>
+			<table name='Z_GS_GTHSWDJ_BGDJ' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="国税-个体户税务登记(变更登记)信息" jdbcname="db02">
+			</table>
+			<table name='Z_DS_GTHSWDJ_BGDJ' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="地税-个体户税务登记(变更登记)信息" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_GOTGTGSHKY_BGDJ' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-港澳台个体工商户开业（变更）登记信息" jdbcname="db02">
+			</table>
+			<table name='Z_GONGSHANG_GOTGTSHZX' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="工商-港澳台个体工商户注销信息" jdbcname="db02">
+			</table>
+		</label>
+		
+		 <label name="人才专家" description="人事部门登记的人才专家信息，主要包含人才引进基本信息、外国专家的审核和工作证许可信息等">
+			<table name='Z_RS_YJRC_JBXX' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-引进人才基本信息" jdbcname="db02">
+			</table>
+			<table name='Z_RS_WGZJLHGZ_XKXX' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-外国专家来华工作许可信息" jdbcname="db02">
+			</table>
+			<table name='Z_RS_WGZJZ_SPXX' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-外国专家证审批信息" jdbcname="db02">
+			</table>
+		</label>
+		
+		<label name="宗教人士" description="宗教场所人员登记信息，主要记录人员的基本信息、何时何地出家、当前法名和职务信息等">
+			<table name='G_ZJCS_RYXX' hm="SFZH" id="GBZJCSRYNO" dbuser="jc_bazy_g" cname="宗教场所人员信息" jdbcname="db01">
+			</table> <!--  @data error sfzh字段表中都没有值 -->
+		</label>
+		
+		<label name="娱乐从业" description="娱乐场所从业人员登记信息，主要记录人员基本信息、娱乐场所名称和地址、场内职务信息等">
+			<table name='G_YLCS_CYRY_NEW' hm="EMP_IDCARD_NUM" id="ID" dbuser="jc_bazy_g" cname="娱乐场所从业人员信息" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="安保人员" description="保安人员登记信息，主要记录保安员的基本信息、所属公司、身体状况、保安资格信息等">
+			<table name='G_BAYXX' hm="GMSFZH" id="SYSTEMID" dbuser="jc_bazy_g" cname="保安员信息" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="警员" description="警员登记信息，主要记录警员的基本信息、单位、职务、警号信息等">
+			<table name='G_JYXX' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="警员信息" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="持枪背景" description="公安机关人员持枪的历史登记信息，主要记录持枪人基本信息，有使用枪支情况、持证编号等信息">
+			<table name='G_CQZXX' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="持枪证信息" jdbcname="db01">
+			</table>
+		</label>
+		
+	</category>
+	
+	
+	<category name="重点类">
+		
+		<label name="违法" description="违法犯罪记录信息，主要包含违法涉外案件信息、全国在逃、全市看守所收教所拘留所数据，违法犯罪人员、在押人员、劳教及释放人员等">
+		    <table name='Z_FY_SWAJ' hm="SFZJHM" id="S_GUID" dbuser="jc_bazy_g" cname="法院-涉外案件信息" jdbcname="db02">
+		    </table>
+			<table name='G_QGZTRY_JBXX' hm="R_SFZH" id="R_RYBH" dbuser="jc_bazy_g" cname="全国在逃人员基本信息" jdbcname="db01">
+			</table>
+			<table name='G_XZZWXTRY' hm="SFZH" id="TMBH" dbuser="jc_bazy_g" cname="刑侦指纹系统人员" jdbcname="db01">
+			</table>
+			<table name='G_WFFZ_QSKSSSJ' hm="ID" id="P_KEY" dbuser="jc_bazy_g" cname="违法犯罪－全市看守所数据" jdbcname="db01">
+			</table>
+			<table name='G_WFFZ_QSSJSSJ' hm="ID" id="P_KEY" dbuser="jc_bazy_g" cname="违法犯罪－全市收教所数据" jdbcname="db01">
+			</table>
+			<table name='G_WFFZ_QSJLSSJ' hm="ID" id="P_KEY" dbuser="jc_bazy_g" cname="违法犯罪－全市拘留所数据" jdbcname="db01">
+			</table>
+			<table name='G_WFFZRY' hm="ID" id="P_NUMBER" dbuser="jc_bazy_g" cname="违法犯罪人员" jdbcname="db01">
+			</table>
+			<table name='Z_RS_WFWJWFHTWJJS' hm="HZHM" id="S_GUID" dbuser="jc_bazy_g" cname="人事-违法、违纪、违反合同外籍教师信息" jdbcname="db02">  
+			</table>
+			<table name='G_ZYRY' hm="ZJHM" id="RYBH" dbuser="jc_bazy_g" cname="在押人员" jdbcname="db01">  
+			</table>
+			<table name='S_LJSFRY' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="劳教释放人员信息" jdbcname="db03">
+			</table>
+			<table name='S_LJRY' hm="IDENTITY_CARD" id="IDENTITY_CARD" dbuser="jc_bazy_g" cname="劳教人员" jdbcname="db03">
+			</table>
+		</label>
+	
+		<label name="涉毒" description="涉毒人员登记信息，主要包含的表有全国涉毒人员和强制隔离戒毒所人员等信息">
+			<table name='G_QGSDRY' hm="C_SFZHM" id="N_XH" dbuser="jc_bazy_g" cname="全国涉毒人员" jdbcname="db01">
+			</table>
+			<table name='S_LJJ_QZGLJDSRY' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="强制隔离戒毒出所人员信息" jdbcname="db03">
+			</table>
+		</label>
+		
+		<label name="涉黄" description="涉黄人员登记信息，主要记录卖淫嫖娼人员的基本信息、卖淫嫖娼犯罪事实等信息">
+			<table name='S_MYPCRY' hm="SFZHM" id="SFZHM" dbuser="jc_bazy_g" cname="卖淫嫖娼人员" jdbcname="db03">
+			</table>
+		</label>
+		
+		<label name="警综嫌疑人" description="警综嫌疑人登记信息，主要记录嫌疑人的基本信息、体貌特征、违法记录等信息">
+			<table name='G_XXRY' hm="ZJHM" id="IIDD" dbuser="jc_bazy_g" cname="警综嫌疑人信息" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="在逃" description="全国在逃人员的登记信息，主要记录在逃人员的基本信息、体貌特征、简要案情和追逃情况等信息">
+			<table name='G_QGZTRY_JBXX' hm="R_SFZH" id="R_RYBH" dbuser="jc_bazy_g" cname="全国在逃人员基本信息" jdbcname="db01">
+			</table>
+		</label>
+		
+		<label name="在押" description="监狱看守所等在押人员登记信息，主要记录在押人员的基本信息、简要案情、关押情况等信息">
+			<table name='G_ZYRY' hm="ZJHM" id="RYBH" dbuser="jc_bazy_g" cname="在押人员" jdbcname="db01">  
+			</table>
+		</label>
+		
+		<label name="七类重点" description="全国七类重点人员登记信息，主要记录人员的基本信息、立案信息和有效性等信息">
+			<table name='G_QGQL_ZDRYXX' hm="SFZH" id="SFZH" dbuser="jc_bazy_g" cname="全国七类重点人员信息" jdbcname="db01">
+		    </table>
+		</label>
+		
+		<label name="情报临控" description="情报临控人员登记信息，主要记录人员的基本信息、简要案情等信息">
+			<table name='G_QB_LKRY' hm="SFZH" id="STAKEOUTNO" dbuser="jc_bazy_g" cname="情报－临控人员信息" jdbcname="db01">
+		    </table>
+		</label>
+		
+		<label name="易销赃" description="易销赃行业从业、交易人员登记信息，主要记录人员的基本信息、企业类型和名称、联系方式等信息">
+			<table name='G_YXZHYQY_JYRY' hm="ZJHM" id="SYSTEMID" dbuser="jc_bazy_g" cname="易销赃行业从业、交易人员信息" jdbcname="db01">
+		    </table>
+		</label>
+		
+		<label name="指纹" description="有指纹采集人员的登记信息，主要记录人员的基本信息，体貌特征和指纹采集信息等">
+			<table name='G_XZZWXTRY' hm="SFZH" id="TMBH" dbuser="jc_bazy_g" cname="刑侦指纹系统人员" jdbcname="db01">
+			</table>
+		</label>
+	</category>
+</labels>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JDBC>
+	<MainConnect>
+		<Driver>oracle.jdbc.OracleDriver</Driver>
+		<URL>jdbc:oracle:thin:@172.25.16.81:1521:ywdb</URL>
+		<UserName>yw6test</UserName>
+		<PassWord>yw6test</PassWord>
+		<ThemeCode>SJZPSICDC</ThemeCode>
+	</MainConnect>
+	<Connects>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.237)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.239)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = zhdb) ) )</URL>
+			<UserName>UR_THEME_XJ</UserName>
+			<PassWord>UR_THEME_XJ</PassWord>
+		</Connect>
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.237)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.239)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = zhdb) ) )</URL>
+			<UserName>UR_DATA_RESOURCE</UserName>
+			<PassWord>UR_DATA_RESOURCE</PassWord>
+		</Connect>
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>JZ_DB_RW</UserName>
+			<PassWord>DB_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PRV_STCRJ_RW</UserName>
+			<PassWord>STCRJ_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>SOC_DB_RW</UserName>
+			<PassWord>DB_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@172.18.69.37:1521:cat22db</URL>
+			<UserName>EZSPATIAL</UserName>
+			<PassWord>EZSPATIAL</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PRV_SYRK_RW</UserName>
+			<PassWord>SYRK_RW</PassWord>
+		</Connect>
+		
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PRV_XZFBA_RW</UserName>
+			<PassWord>XZFBA_RW</PassWord>
+		</Connect>
+		<!-- 新加 -->
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_SJS_RW</UserName>
+			<PassWord>SJS_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>Prvyw_ydhc_rw</UserName>
+			<PassWord>ydhc_rw</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>qb_xf_rw</UserName>
+			<PassWord>xf_rw</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>QB_ZDRY_RW</UserName>
+			<PassWord>ZDRY_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_JLS_RW</UserName>
+			<PassWord>JLS_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_CCRK_RW</UserName>
+			<PassWord>CCRK_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>QB_SIM_RW</UserName>
+			<PassWord>SIM_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_ZADDY_RW</UserName>
+			<PassWord>ZADDY_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_ZAFJWPHS_RW</UserName>
+			<PassWord>ZAFJWPHS_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_ZAYZY_RW</UserName>
+			<PassWord>ZAYZY_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_YLCS_RW</UserName>
+			<PassWord>YLCS_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_ZZRK_RW</UserName>
+			<PassWord>ZZRK_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_PCSZH_RW</UserName>
+			<PassWord>PCSZH_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_CZC_RW</UserName>
+			<PassWord>CZC_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PGIS_DB_RW</UserName>
+			<PassWord>DB_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>ZHZX_CZC_RW</UserName>
+			<PassWord>CZC_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PRV_ZTRY_RW</UserName>
+			<PassWord>ZTRY_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PRV_BDQJDC_RW</UserName>
+			<PassWord>BDQJDC_RW</PassWord>
+		</Connect>
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>YW_JJZD_RW</UserName>
+			<PassWord>JJZD_RW</PassWord>
+		</Connect>
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.232)(PORT = 1521)) (ADDRESS = (PROTOCOL =
+				TCP)(HOST = 10.25.2.234)(PORT = 1521)) (LOAD_BALANCE = yes)
+				(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ysdb) ) )</URL>
+			<UserName>PRV_FLG_RW</UserName>
+			<PassWord>FLG_RW</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@10.25.2.225:1521:TKDB</URL>
+			<UserName>tk</UserName>
+			<PassWord>tk</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@10.25.2.226:1521:kkdb</URL>
+			<UserName>kk</UserName>
+			<PassWord>kk</PassWord>
+		</Connect>
+
+		<Connect>
+			<Driver>oracle.jdbc.OracleDriver</Driver>
+			<URL>jdbc:oracle:thin:@10.25.2.248:1521:wldb</URL>
+			<UserName>WB</UserName>
+			<PassWord>WB</PassWord>
+		</Connect>
+
+	</Connects>
+</JDBC>
